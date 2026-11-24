@@ -154,6 +154,7 @@ else:
         (roster, calcular_fitness(roster))
         for roster in combinations(PERSONAJES_CANDIDATOS, N)
     ]
+    
     resultados.sort(key=lambda resultado: resultado[1], reverse=True)
 
     roster_optimo, fitness_optimo = resultados[0]
